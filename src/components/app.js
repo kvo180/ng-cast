@@ -6,15 +6,12 @@ angular.module('video-player')
 
 .directive('app', function() {
   return {
-    scope: {
-      videos: '<'
-    },
     restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function() {
       this.videos = window.exampleVideoData;
-      console.log('APP: ', this.videos);
+      this.currentVideo = this.videos[0];
     },
     templateUrl: 'src/templates/app.html'
   };
