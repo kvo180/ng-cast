@@ -3,6 +3,7 @@
     <iframe 
       ng-if="ctrl.video"
       class="embed-responsive-item"
+      src="{{'https://www.youtube.com/embed/' + ctrl.video.id.videoId}}"
       allowFullScreen
     >
     </iframe>
@@ -12,4 +13,3 @@
     <div>{{ctrl.video.snippet.description}}</div>
   </div>
 </div>
-      <!-- src="{{'https://www.youtube.com/embed/' + ctrl.video.id.videoId}}" -->

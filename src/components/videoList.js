@@ -9,10 +9,10 @@ angular.module('video-player')
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function() {
-      this.onClick = (event) => {
+      // this.onClick = (event) => {
 
-      };
-      console.log('VIDEOLIST', this);
+      // };
+      // console.log('VIDEOLIST', this);
     },
     templateUrl: 'src/templates/videoList.html'
   };
