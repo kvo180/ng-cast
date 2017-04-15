@@ -9,9 +9,7 @@ angular.module('video-player')
     restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
-    controller: function() {
-      // console.log('VIDOELISTENTRY', this);
-    },
+    controller: function() {},
     templateUrl: 'src/templates/videoListEntry.html'
   };
 });

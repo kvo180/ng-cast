@@ -8,9 +8,7 @@ angular.module('video-player')
     restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
-    controller: function() {
-      
-    },
+    controller: function() {},
     templateUrl: 'src/templates/videoPlayer.html'
   };
 });
