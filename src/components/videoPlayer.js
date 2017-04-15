@@ -4,20 +4,17 @@ angular.module('video-player')
   return {
     scope: {
       video: '<',
-      text: '<'
+      // text: '<' JUST DELETE THIS AND EVERYTHING WORKS!!!!?!?@?@?#@#$ 
     },
     restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function() {
-      // console.log('PLAYER: ', this.video);
-      // if (this.video) {
-      //   console.log('if');
+      // Code below doesn't work: text will always be shown since this.video === undefined. WHY?@#
+      // if (!this.video) {
       //   this.text = '';
-      // } else {
-      //   console.log('else');
-      //   this.text = 'Please wait';
-      // }
+      // } 
+      // this.text = 'Please wait';
     },
     templateUrl: 'src/templates/videoPlayer.html'
   };

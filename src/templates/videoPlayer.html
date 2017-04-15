@@ -7,9 +7,11 @@
       allowFullScreen
     >
     </iframe>
+    <p ng-if="!ctrl.video">Please wait</p>
   </div>
   <div class="video-player-details">
     <h3>{{ctrl.video.snippet.title}}</h3>
     <div>{{ctrl.video.snippet.description}}</div>
   </div>
 </div>
+    <!-- {{ctrl.text}} -->
